@@ -121,7 +121,7 @@ static inline uint32_t swab32(uint32_t v)
 }
 
 // Swap any two variables of the same type without using a temp
-#define swap_vars(a,b) a^=b; b^=a; a^=b;
+#define swap_vars(a,b) (a)^=(b); (b)^=(a); (a)^=(b);
 
 #ifdef HAVE_SYS_ENDIAN_H
 #include <sys/endian.h>

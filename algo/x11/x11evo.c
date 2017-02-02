@@ -106,7 +106,7 @@ int nextPerm( uint8_t n[], uint32_t count )
 	         evo_swap( &n[tail - 1], &n[j] );
 
 	for ( i = tail, j = count - 1; i<j; i++, j-- )
-		evo_swap( &n[i], &n[j] );
+                evo_swap( &n[i], &n[j] );
 
 	return ( tail != 0 );
 }
